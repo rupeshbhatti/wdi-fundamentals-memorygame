@@ -1,0 +1,153 @@
+body {
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Raleway",serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: #00A6B3;
+  padding: 20px 0 20px 0;
+
+}
+
+/*nav a {
+  font-family: "Raleway",serif;
+  color: #F15B31;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 20px 0 20px;
+}*/
+
+h2 {
+  font-family: "Raleway",serif;
+  color: #0D2C40;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Droid Serif", serif;
+  line-height: 26px;
+  font-size: 18px;
+}
+
+input {
+  font-family: "Droid Serif", serif;
+  font-size:18px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+     background: #F15B31;
+     color: white;
+     border-radius: 5px;
+     border: thin solid #F15B31;
+}
+
+input[type="submit"]:hover {
+     background: white;
+     color: #F15B31;
+     border: thin solid #F15B31;
+     border-radius: 5px;
+}
+
+header {
+  background-color: #F15B31;
+  padding: 30px 20px 30px 20px;
+  color: white;
+}
+
+main {
+  width: 850px;
+  margin: 35px auto 35px auto;
+}
+
+img {
+  margin: 40px 8px 0 8px;
+}
+
+footer {
+  text-transform: uppercase;
+  padding: 0 20px 0 20px;
+  background-color: #0D2C40;
+  color: white;
+  font-size: 14px;
+  letter-spacing: .08em;
+  font-weight: 500;
+}
+
+.copyright {
+  font-family: "Raleway",serif;
+  float:left;
+}
+
+.message {
+  font-family: "Raleway",serif;
+  float:right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
+}
+
+.name {
+  color: #F15B31;
+  font-weight: 700;
+}
+
+a {
+  font-family: "Raleway",serif;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin: 0 20px 0 20px;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  border-color: #F15B31;
+}
+
+.LinkedIn {
+  font-family: "Raleway",serif;
+  color: white;
+  background-color: #0084bf;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: lowercase;
+  margin: 0 20px 0 20px;
+  border-bottom: 2px solid transparent;
+  padding: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  border: thin solid #0084bf;
+}
+
+.LinkedIn:hover {
+  background: white;
+  color: #0084bf;
+  border: thin solid #0084bf;
+}
