@@ -2,7 +2,31 @@
 console.log("Up and Running!");*/
 
 // Inialise a new array called cards and store two queen cards and two king cards
-var cards = ["queen","queen","king","king"];
+var cards = [
+  {
+    rank: "queen",
+    suit: "hearts",
+    cardImage: "images/queen-of-hearts.png"
+  },
+
+  {
+    rank:"queen",
+    suit: "diamonds",
+    cardImage: "images/queen-of-diamonds.png"
+  },
+
+  {
+    rank:"king",
+    suit: "hearts",
+    cardImage: "images/king-of-hearts.png"
+  },
+
+  {
+    rank:"king",
+    suit: "diamonds",
+    cardImage: "images/king-of-diamonds.png"
+  }
+];
 
 // Create a new empty array to hold the cards in play
 var cardsInPlay = [];
@@ -19,9 +43,11 @@ var checkForMatch = function () {
 
 // flipCard function declaration
 var flipCard = function (cardId) {
-  console.log("User flipped " + cards[cardId]);
+  console.log("User flipped " + cards[cardId].rank);
+  console.log(cards[cardId].cardImage);
+  console.log(cards[cardId].suit);
 
-  cardsInPlay.push(cards[cardId]);
+  cardsInPlay.push(cards[cardId].rank);
 
   // invoke checkForMatch function if two cards have been flipped
   if (cardsInPlay.length === 2) {
@@ -30,4 +56,4 @@ var flipCard = function (cardId) {
 }
 
 flipCard(0);
-flipCard(1);
+flipCard(2);
