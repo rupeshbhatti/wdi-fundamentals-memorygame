@@ -151,3 +151,47 @@ a:hover {
   color: #0084bf;
   border: thin solid #0084bf;
 }
+
+#scoreboard {
+  display: block;
+  font-family: "Raleway",serif;
+  background-color: white;
+  /*padding: 20px 0 20px 0;*/
+  color: #00A6B3;
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+#game-result {
+  font-family: "Raleway",serif;
+  background-color: white;
+  color: #F15B31;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 20px 0 -20px 0;
+}
+
+.cardWithMatch {
+  border: medium solid green;
+  border-radius: 10px;
+}
+
+.cardNoMatch {
+  border: medium solid red;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  font-family: "Raleway",serif;
+  letter-spacing: 2px;
+  font-weight: 200;
+  font-size: 30px;
+  border-radius: 5px;
+  margin-top: -10px;
+}
