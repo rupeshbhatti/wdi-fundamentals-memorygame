@@ -79,21 +79,27 @@ var checkForMatch = function () {
 
 // A function to flip the card that has been clicked
 var flipCard = function () {
-  //discover which card was flipped by User
-  var cardId = this.getAttribute('data-id');
+  //only flip a card if two cards haven't already been flipped
+  if (cardsInPlay.length !== 2) {
+      //discover which card was flipped by User
+      var cardId = this.getAttribute('data-id');
 
-  // display the front of the card that has been flipped
-  this.setAttribute('src', cards[cardId].cardImage);
+      // display the front of the card that has been flipped
+      this.setAttribute('src', cards[cardId].cardImage);
 
-  // push the flipped card to the cardsInPlay array
-  cardsInPlay.push(cards[cardId]);
+      // push the flipped card to the cardsInPlay array if it hasn't already been flipped over
+      if (cardsInPlay[0] !== cards[cardId] ) {
+        cardsInPlay.push(cards[cardId]);
+      }
 
-  // if two cards have been flipped, call checkForMatch()
-  if (cardsInPlay.length === 2) {
-    checkForMatch();
-    // show the hidden 'Play Again button'
-    document.querySelector('.hidden').removeAttribute('class');
+      // if two cards have been flipped, call checkForMatch()
+      if (cardsInPlay.length === 2) {
+        checkForMatch();
+        // show the hidden 'Play Again button'
+        document.querySelector('.hidden').removeAttribute('class');
+      }
   }
+
 }
 
 // A function to create the board
